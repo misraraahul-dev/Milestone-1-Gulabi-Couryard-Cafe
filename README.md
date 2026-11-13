@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Gulabi Courtyard Café
 
 A simple café website created as part of **WS Cube Tech – Milestone 1**.

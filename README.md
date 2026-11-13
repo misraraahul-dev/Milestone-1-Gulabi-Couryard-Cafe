@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gulabi Courtyard Café
 
 A simple café website created as part of **WS Cube Tech – Milestone 1**.
@@ -28,3 +29,7 @@ The website is inspired by Jaipur's pink architecture and welcoming café atmosp
 ## Note
 
 This is a frontend learning project. The café's contact details are fictional, and the contact form does not send messages without a backend.
+=======
+# Milestone-1-Gulabi-Couryard-Cafe
+The website is inspired by Jaipur's pink architecture and welcoming café atmosphere. It is a practice project, not a real café website.
+>>>>>>> 1ac715a9236739d1931324565c32ec9fca530f20

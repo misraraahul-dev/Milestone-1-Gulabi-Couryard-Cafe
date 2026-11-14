@@ -63,14 +63,15 @@
                 <summary
                     class="flex list-none items-center justify-center rounded-lg p-2 text-[#48221C] cursor-pointer hover:bg-[#FCE7E7]">
                     <span class="">
-                       <i class="fa-solid fa-bars-staggered text-[24px]"></i>
+                        <i class="fa-solid fa-bars-staggered text-[24px]"></i>
                     </span>
                 </summary>
 
                 <nav
                     class="absolute top-full right-0 mt-3 w-80 max-w-[85vw] rounded-xl border border-[#F2E4DE] bg-white p-3 shadow-md ">
 
-                    <ul class="flex flex-col gap-1 font-body text-[14px] font-bold text-[#48221C] divide-y-2 divide-gray-200">
+                    <ul
+                        class="flex flex-col gap-1 font-body text-[14px] font-bold text-[#48221C] divide-y-2 divide-gray-200">
                         <li>
                             <a href="index.html" class="block rounded-lg bg-[#FCE7E7] px-4 py-3 text-[#BD1050]">Home</a>
                         </li>
@@ -102,66 +103,83 @@
         </div>
     </header>
 
-    <section class="grid grid-cols-1 bg-[#FFF9F5] md:grid-cols-[50%_50%] max-w-[1920px] mx-auto">
 
-        <div class="flex flex-col justify-center lg:mx-50 px-6 py-12 sm:px-9 md:px-10 lg:px-14">
+    <section class="mx-auto grid max-w-[1920px] grid-cols-1
+                bg-[#FFF9F5] lg:grid-cols-2">
 
-            <div class="mb-9 flex items-center gap-3">
+        <!-- Left Content -->
+        <div class="flex items-center justify-center
+                px-6 py-14 sm:px-10 lg:px-12 xl:px-16">
 
-                <span class="h-px w-10 bg-[#E84E76]"></span>
+            <div class="w-full max-w-[520px]">
 
-                <span class="font-body text-[12px] font-bold text-[#632C21]">
-                    A LITTLE TASTE OF JAIPUR
-                </span>
+                <!-- Small Heading -->
+                <div class="mb-8 flex items-center gap-3">
 
-                <span class="h-px w-10 bg-[#E84E76]"></span>
+                    <span class="h-px w-8 bg-[#E84E76]"></span>
 
-            </div>
+                    <span class="font-body text-xs font-bold
+                             text-[#632C21]">
+                        A LITTLE TASTE OF JAIPUR
+                    </span>
 
-            <h1 class="font-heading">
+                    <span class="h-px w-8 bg-[#E84E76]"></span>
 
-                <span class="text-[#C30D4C] text-[80px] leading-[0.50]">
-                    Gulabi
-                </span>
+                </div>
 
-                <span class="text-[#652A20] text-[60px] sm:leading-[1.0] leading-[0.80]">
-                    Courtyard Café
-                </span>
+                <!-- Main Heading -->
+                <h1 class="font-heading leading-tight">
 
-            </h1>
+                    <span class="block text-6xl text-[#C30D4C]
+                             sm:text-7xl">
+                        Gulabi
+                    </span>
 
-            <p class="sm:mt-5 mt-5 max-w-[380px] font-body text-[17px] text-[#4E3B35]">
+                    <span class="block text-4xl text-[#652A20]
+                             sm:text-5xl xl:text-6xl">
+                        Courtyard Café
+                    </span>
 
-                A cozy café in the heart of Jaipur,
-                serving freshly brewed coffee,
-                delicious food and warm Rajasthani
-                hospitality.
+                </h1>
 
-            </p>
+                <!-- Description -->
+                <p class="mt-6 max-w-[420px] font-body
+                      text-lg leading-relaxed text-[#4E3B35]">
 
-            <div class="mt-7 flex flex-wrap items-center
-                  gap-4 font-body text-[15px] font-bold">
+                    A cozy café in the heart of Jaipur,
+                    serving freshly brewed coffee,
+                    delicious food and warm Rajasthani
+                    hospitality.
 
-                <a href="menu.html" class="inline-flex min-h-10 items-center justify-center rounded-lg bg-[#BF1050] px-8 py-3 text-white transition-colors hover:bg-[#991044]">
+                </p>
 
-                    View Menu
+                <!-- Buttons -->
+                <div class="mt-8 flex flex-wrap gap-4
+                        font-body text-sm font-bold">
 
-                </a>
+                    <a href="menu.html" class="rounded-lg bg-[#BF1050]
+                          px-8 py-4 text-white
+                          hover:bg-[#991044]">
+                        View Menu
+                    </a>
 
-                <a href="contact.html#location" class="inline-flex min-h-10 items-center justify-center rounded-lg border border-[#BF1050] px-6 py-3 text-[#BF1050]
-                  transition-colors hover:bg-[#FCE7E7]">
+                    <a href="contact.html#location" class="rounded-lg border border-[#BF1050]
+                          px-8 py-4 text-[#BF1050]
+                          hover:bg-[#FCE7E7]">
+                        Get Directions
+                    </a>
 
-                    Get Directions
-
-                </a>
+                </div>
 
             </div>
 
         </div>
 
-        <div class="min-h-[500px] md:min-h-[500px] lg:min-h-[800px]">
+        <!-- Right Image -->
+        <div class="h-[400px] lg:h-[680px] xl:h-[720px]">
 
-            <img src="assets/images/hero/hero_courtyard_2x.png" alt="Beautiful pink Jaipur courtyard café" class="h-full w-full object-cover object-center">
+            <img src="assets/images/hero/hero_courtyard_2x.png" alt="Beautiful pink Jaipur courtyard café"
+                class="h-full w-full object-cover object-center">
 
         </div>
 
@@ -169,29 +187,31 @@
 
 
 
-    <section class="grid grid-rows-1 md:grid-cols-4 bg-[#FFF9F5] mx-auto min-h-[200px] items-center divide-x-2 divide-gray-200 container">
-       <div class="flex flex-col items-center justify-center sm:m-0 m-5">
+
+    <section
+        class="grid grid-rows-1 md:grid-cols-4 bg-[#FFF9F5] mx-auto min-h-[200px] items-center divide-x-2 divide-gray-200 container">
+        <div class="flex flex-col items-center justify-center sm:m-0 m-5">
             <figure>
                 <img src="assets/images/icons/Brewed Coffee.png" alt="">
             </figure>
             <p class="mt-4">Freshly Brewed Coffee</p>
             <p>Rich aroma, perfect taste</p>
         </div>
-       <div class="flex flex-col items-center justify-center sm:m-0 m-5">
+        <div class="flex flex-col items-center justify-center sm:m-0 m-5">
             <figure>
                 <img src="assets/images/icons/Delicious Food.png" alt="">
             </figure>
             <p class="mt-4">Delicious Food</p>
             <p>Café classics & local favourites</p>
         </div>
-       <div class="flex flex-col items-center justify-center sm:m-0 m-5">
+        <div class="flex flex-col items-center justify-center sm:m-0 m-5">
             <figure>
                 <img src="assets/images/icons/Jaipur Ambience.png" alt="">
             </figure>
             <p class="mt-4">Jaipur Ambience</p>
             <p>A heritage café experience/p>
         </div>
-       <div class="flex flex-col items-center justify-center sm:m-0 m-5">
+        <div class="flex flex-col items-center justify-center sm:m-0 m-5">
             <figure>
                 <img src="assets/images/icons/Warm Hospitality.png" alt="">
             </figure>
@@ -203,58 +223,59 @@
 
     <section class="mx-auto max-w-[1920px]">
 
-    <figure class="h-[280px] w-full
+        <figure class="h-[280px] w-full
                    bg-[url('assets/images/interior-photographs/gulabi-courtyard-cafe-1.png')]
                    bg-cover bg-left bg-no-repeat bg-fixed
                    sm:h-[500px]">
-    </figure>
-
-</section>
-
-   <section>
-
-             <div class="flex items-center gap-3 my-8">
-
-                <span class="font-heading text-[33px] font-bold text-[#632C21] mx-auto items-center">
-                   Our Popular Favourites
-                </span>
-
-            </div>
-
-    <section class="grid grid-rows-1 md:grid-cols-4 bg-[#FFF9F5] mx-auto min-h-[200px] items-center container gap-3">
-    
-        <div class="flex flex-col items-center justify-center sm:m-0 m-5 rounded-lg shadow-xl">
-            <figure>
-                <img src="assets/images/products/cappuccino_2x.png" alt="">
-            </figure>
-            <p class="mt-4 font-bold text-[20px] text-[#481711]">Cappuccino</p>
-            <p class="text-[18px] mb-4">₹180</p>
-        </div>
-       <div class="flex flex-col items-center justify-center sm:m-0 m-5 rounded-lg shadow-xl">
-            <figure>
-                <img src="assets/images/products/masala_sandwich_2x.png" alt="">
-            </figure>
-            <p class="mt-4 font-bold text-[20px] text-[#481711]">Masala Sandwich</p>
-            <p class="text-[18px] mb-4">₹220</p>
-        </div>
-       <div class="flex flex-col items-center justify-center sm:m-0 m-5 rounded-lg shadow-xl">
-            <figure>
-                <img src="assets/images/products/paneer_tikka_wrap_2x.png" alt="">
-            </figure>
-            <p class="mt-4 font-bold text-[20px] text-[#481711]">Paneer Tikka Wrap</p>
-            <p class="text-[18px] mb-4">₹240</p>
-        </div>
-       <div class="flex flex-col items-center justify-center sm:m-0 m-5 rounded-lg shadow-xl">
-            <figure>
-                <img src="assets/images/products/chocolate_brownie_2x.png" alt="">
-            </figure>
-            <p class="mt-4 font-bold text-[20px] text-[#481711]">Chocolate Brownie</p>
-            <p class="text-[18px] mb-4">₹260</p>
-        </div>
-      
+        </figure>
 
     </section>
-</section>
+
+    <section>
+
+        <div class="flex items-center gap-3 my-8">
+
+            <span class="font-heading text-[33px] font-bold text-[#632C21] mx-auto items-center">
+                Our Popular Favourites
+            </span>
+
+        </div>
+
+        <section
+            class="grid grid-rows-1 md:grid-cols-4 bg-[#FFF9F5] mx-auto min-h-[200px] items-center container gap-3">
+
+            <div class="flex flex-col items-center justify-center sm:m-0 m-5 rounded-lg shadow-xl">
+                <figure>
+                    <img src="assets/images/products/cappuccino_2x.png" alt="">
+                </figure>
+                <p class="mt-4 font-bold text-[20px] text-[#481711]">Cappuccino</p>
+                <p class="text-[18px] mb-4">₹180</p>
+            </div>
+            <div class="flex flex-col items-center justify-center sm:m-0 m-5 rounded-lg shadow-xl">
+                <figure>
+                    <img src="assets/images/products/masala_sandwich_2x.png" alt="">
+                </figure>
+                <p class="mt-4 font-bold text-[20px] text-[#481711]">Masala Sandwich</p>
+                <p class="text-[18px] mb-4">₹220</p>
+            </div>
+            <div class="flex flex-col items-center justify-center sm:m-0 m-5 rounded-lg shadow-xl">
+                <figure>
+                    <img src="assets/images/products/paneer_tikka_wrap_2x.png" alt="">
+                </figure>
+                <p class="mt-4 font-bold text-[20px] text-[#481711]">Paneer Tikka Wrap</p>
+                <p class="text-[18px] mb-4">₹240</p>
+            </div>
+            <div class="flex flex-col items-center justify-center sm:m-0 m-5 rounded-lg shadow-xl">
+                <figure>
+                    <img src="assets/images/products/chocolate_brownie_2x.png" alt="">
+                </figure>
+                <p class="mt-4 font-bold text-[20px] text-[#481711]">Chocolate Brownie</p>
+                <p class="text-[18px] mb-4">₹260</p>
+            </div>
+
+
+        </section>
+    </section>
 
 
 
@@ -294,88 +315,87 @@
 
             <div class="min-h-[200px] sm:p-0 p-5 md:min-h-[500px] lg:min-h-[600px] flex items-center">
 
-                <img src="assets/images/hero/our_story_courtyard_2x-full.png" alt="Beautiful pink Jaipur courtyard café" class="items-center rounded-lg shadow-xl">
+                <img src="assets/images/hero/our_story_courtyard_2x-full.png" alt="Beautiful pink Jaipur courtyard café"
+                    class="items-center rounded-lg shadow-xl">
 
             </div>
         </section>
 
     </section>
 
-<section class="mx-auto max-w-[1920px]">
+    <section class="mx-auto max-w-[1920px]">
 
-    <figure class="h-[280px] w-full
+        <figure class="h-[280px] w-full
                    bg-[url('assets/images/interior-photographs/gulabi-courtyard-cafe-4.png')]
                    bg-cover bg-right bg-no-repeat bg-fixed
                    sm:h-[500px]">
-    </figure>
+        </figure>
 
-</section>
-<section class="bg-[#FFF9F5] px-5 py-12 md:py-16">
+    </section>
+    <section class="bg-[#FFF9F5] px-5 py-12 md:py-16">
 
-    <div class="mb-5 flex items-center justify-center gap-3">
+        <div class="mb-5 flex items-center justify-center gap-3">
 
-        <span class="h-px w-10 bg-[#E84E76]"></span>
+            <span class="h-px w-10 bg-[#E84E76]"></span>
 
-         <span class="font-heading sm:text-[33px] text-[25px] font-bold text-[#632C21]">
-                 What Our Guests Say
-                </span>
-      
-        <span class="h-px w-10 bg-[#E84E76]"></span>
-
-    </div>
-
-    <figure class="mx-auto flex max-w-[600px] flex-col
-                   items-center gap-4 rounded-xl bg-white
-                   px-5 py-5 sm:flex-row">
-
-        <img
-            src="assets/images/testimonial/priya-sharma.png"
-            alt="Portrait of Priya Sharma"
-            class="h-20 w-20 shrink-0 rounded-full object-cover">
-
-        <div class="flex items-start gap-3">
-
-            <span class="font-heading text-[31px] leading-none
-                         text-[#C30D4C]" aria-hidden="true">
-                “
+            <span class="font-heading sm:text-[33px] text-[25px] font-bold text-[#632C21]">
+                What Our Guests Say
             </span>
 
-            <div class="font-body">
-
-                <blockquote class="text-[18px] leading-relaxed
-                                   italic text-[#48221C]">
-                    A beautiful place with great coffee and a lovely
-                    Jaipur vibe. The food, ambience and service are
-                    simply wonderful!
-                </blockquote>
-
-                <figcaption class="mt-2 text-[14px] font-medium
-                                   text-[#C30D4C]">
-                    — Priya Sharma
-                </figcaption>
-
-            </div>
+            <span class="h-px w-10 bg-[#E84E76]"></span>
 
         </div>
 
-    </figure>
+        <figure class="mx-auto flex max-w-[600px] flex-col
+                   items-center gap-4 rounded-xl bg-white
+                   px-5 py-5 sm:flex-row">
 
-</section>
+            <img src="assets/images/testimonial/priya-sharma.png" alt="Portrait of Priya Sharma"
+                class="h-20 w-20 shrink-0 rounded-full object-cover">
 
-<footer class="z-50 border-t border-[#6D1C25] bg-white shadow-xl"></footer>
-      <div
-            class="mx-auto flex min-h-[90px] max-w-[1366px] items-center sm:justify-between justify-center gap-5 px-5 py-3 lg:px-10 lg:py-0">
+            <div class="flex items-start gap-3">
 
-            <a href="index.html">
-                <img src="assets/images/branding/gulabi-courtyard-logo.png" alt="Gulabi Courtyard Café"
-                    class="h-auto w-40 sm:w-[210px]">
-            </a>
-
-       
-         <span class="font-body text-[18px] text-[#632C21] sm:block hidden">
-                 Designed with <i class="fa-solid fa-heart text-red-600"></i> by Misra Raahul
+                <span class="font-heading text-[31px] leading-none
+                         text-[#C30D4C]" aria-hidden="true">
+                    “
                 </span>
-</footer>
+
+                <div class="font-body">
+
+                    <blockquote class="text-[18px] leading-relaxed
+                                   italic text-[#48221C]">
+                        A beautiful place with great coffee and a lovely
+                        Jaipur vibe. The food, ambience and service are
+                        simply wonderful!
+                    </blockquote>
+
+                    <figcaption class="mt-2 text-[14px] font-medium
+                                   text-[#C30D4C]">
+                        — Priya Sharma
+                    </figcaption>
+
+                </div>
+
+            </div>
+
+        </figure>
+
+    </section>
+
+    <footer class="z-50 border-t border-[#6D1C25] bg-white shadow-xl"></footer>
+    <div
+        class="mx-auto flex min-h-[90px] max-w-[1366px] items-center sm:justify-between justify-center gap-5 px-5 py-3 lg:px-10 lg:py-0">
+
+        <a href="index.html">
+            <img src="assets/images/branding/gulabi-courtyard-logo.png" alt="Gulabi Courtyard Café"
+                class="h-auto w-40 sm:w-[210px]">
+        </a>
+
+
+        <span class="font-body text-[18px] text-[#632C21] sm:block hidden">
+            Designed with <i class="fa-solid fa-heart text-red-600"></i> by Misra Raahul
+        </span>
+        </footer>
 
 </body>
 

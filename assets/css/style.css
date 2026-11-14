@@ -1,4 +1,3 @@
-
 /* Load the Google Fonts used in Figma */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap");
 
@@ -7,8 +6,8 @@
 
 /* Register custom Tailwind font utilities */
 @theme {
-  --font-heading: "DM Serif Display", serif;
-  --font-body: "DM Sans", sans-serif;
+    --font-heading: "DM Serif Display", serif;
+    --font-body: "DM Sans", sans-serif;
 }
 
 
